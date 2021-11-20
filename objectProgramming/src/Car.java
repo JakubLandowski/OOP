@@ -6,32 +6,32 @@ public class Car {
     private boolean lights = false;
 
     public void startEngine(){
-        System.out.println("Silnik działa");
+        System.out.println("Engine on");
     }
     public void stopEngine(){
-        System.out.println("Silnik zgasł");
+        System.out.println("Engine off");
     }
 
     public void accelerate(int speed){
         this.speed += speed;
-        System.out.println("Samochód jedzie z prędkością "+this.speed+" km/h");
+        System.out.println("Car is moving at speed "+this.speed+" km/h");
     }
     public void decelerate(int speed){
         this.speed -= speed;
         if(this.speed>0)
-            System.out.println("Samochód jedzie z prędkością "+this.speed+" km/h");
+            System.out.println("Car is moving at speed "+this.speed+" km/h");
         else {
             this.speed=0;
-            System.out.println("Samochód zatrzymał się");
+            System.out.println("Car stopped");
         }
     }
 
     public void setGear(int gear){
         if (gear > 0 && gear < 7){
             this.gear = gear;
-            System.out.println("Aktywny bieg "+this.gear);
+            System.out.println("Active gear "+this.gear);
         }
-        else System.out.println("Nie ma takiego biegu");
+        else System.out.println("Incorrect gear");
     }
     public int getGear(){
         return this.gear;
@@ -39,9 +39,8 @@ public class Car {
 
     public void switchLights(){
         lights = !lights;
-        if (lights == true)
-            System.out.println("światła włączone");
-        else System.out.println("światła wyłączone");
+        if (lights == true) System.out.println("lights on");
+        else System.out.println("lights off");
     }
     public void setLights(boolean lights){
         this.lights = lights;
