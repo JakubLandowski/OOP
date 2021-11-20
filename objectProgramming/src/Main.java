@@ -3,5 +3,10 @@ public class Main {
 
         Car audi = new Car();
         audi.startEngine();
+        audi.accelerate(20);
+        audi.accelerate(20);
+        audi.decelerate(15);
+        audi.decelerate(66);
+        audi.stopEngine();
     }
 }
