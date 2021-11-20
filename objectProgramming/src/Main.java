@@ -28,9 +28,13 @@ public class Main {
         Car hyundai = new Car("I30");
         Car ursus = new Car(10, 5, "C-330");*/      // previous exercises
 
-        Kia rio = new Kia(20100405,"Kia Rio", false, 150000);
-
+        Kia rio = new Kia(2010,"Kia Rio", false, 150000, "Comfort");
         rio.startEngine();
+
+        Vehicle vehicle = new Vehicle(2000, "vehicle", false, 0);
+        vehicle.startEngine();
+
+        Golf golf = new Golf(1999, "Golf", true, 3000, Drive.RWD);
 
     }
 }
