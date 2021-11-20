@@ -19,12 +19,13 @@ public class Main {
 
         Car fiat = new Car(300, 2, "Panda", true);
         System.out.println("Change car to "+fiat.getName());
-        fiat.getSpeed();
+        System.out.println("Getting speed ... "+fiat.getSpeed());
         fiat.switchLights();
         fiat.decelerate(250);
         fiat.decelerate(77);
 
         Car lada = new Car();
+        Car hyundai = new Car("I30");
         Car ursus = new Car(10, 5, "C-330");
 
     }

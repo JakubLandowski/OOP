@@ -11,15 +11,17 @@ public class Car {
         this.name = name;
         this.lights = lights;
     }
-    public Car(){
-
-    }
     public Car(int speed, int gear, String name){
         this.speed = speed;
         this.gear = gear;
         this.name = name;
     }
+    public Car(String name){
+        this.name = name;
+    }
+    public Car(){
 
+    }
 
 
     public void startEngine(){
