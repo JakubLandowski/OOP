@@ -1,6 +1,6 @@
 public class Car {
 
-    private int speed = 0;
+    /*private int speed = 0;
     private int gear;
     private String name;
     private boolean lights = false;
@@ -80,7 +80,9 @@ public class Car {
     }
     public void setName(String name) {
         this.name = name;
-    }
+    }*/     // previous exercises
+
+
 
 
 }

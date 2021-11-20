@@ -1,7 +1,7 @@
 public class Main {
     public static void main(String[] args) {
 
-        Car audi = new Car(0, 1, "A8", false);
+        /*Car audi = new Car(0, 1, "A8", false);
         audi.startEngine();
         audi.setLights(true);
         System.out.println("Checking lights ... "+audi.getLights());
@@ -26,7 +26,11 @@ public class Main {
 
         Car lada = new Car();
         Car hyundai = new Car("I30");
-        Car ursus = new Car(10, 5, "C-330");
+        Car ursus = new Car(10, 5, "C-330");*/      // previous exercises
+
+        Kia rio = new Kia(20100405,"Kia Rio", false, 150000);
+
+        rio.startEngine();
 
     }
 }
