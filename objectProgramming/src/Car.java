@@ -5,6 +5,23 @@ public class Car {
     private String name;
     private boolean lights = false;
 
+    public Car(int speed, int gear, String name, boolean lights){
+        this.speed = speed;
+        this.gear = gear;
+        this.name = name;
+        this.lights = lights;
+    }
+    public Car(){
+
+    }
+    public Car(int speed, int gear, String name){
+        this.speed = speed;
+        this.gear = gear;
+        this.name = name;
+    }
+
+
+
     public void startEngine(){
         System.out.println("Engine on");
     }
@@ -49,6 +66,19 @@ public class Car {
         return lights;
     }
 
+    // automatically generated setters and getters
+    public int getSpeed() {
+        return speed;
+    }
+    public void setSpeed(int speed) {
+        this.speed = speed;
+    }
+    public String getName() {
+        return name;
+    }
+    public void setName(String name) {
+        this.name = name;
+    }
 
 
 }

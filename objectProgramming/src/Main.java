@@ -1,7 +1,7 @@
 public class Main {
     public static void main(String[] args) {
 
-        Car audi = new Car();
+        Car audi = new Car(0, 1, "A8", false);
         audi.startEngine();
         audi.setLights(true);
         System.out.println("Checking lights ... "+audi.getLights());
@@ -14,6 +14,18 @@ public class Main {
         System.out.println("Checking gear ... "+audi.getGear());
         audi.stopEngine();
         audi.switchLights();
+
+
+
+        Car fiat = new Car(300, 2, "Panda", true);
+        System.out.println("Change car to "+fiat.getName());
+        fiat.getSpeed();
+        fiat.switchLights();
+        fiat.decelerate(250);
+        fiat.decelerate(77);
+
+        Car lada = new Car();
+        Car ursus = new Car(10, 5, "C-330");
 
     }
 }
