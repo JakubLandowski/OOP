@@ -27,14 +27,20 @@ public class Main {
         Car lada = new Car();
         Car hyundai = new Car("I30");
         Car ursus = new Car(10, 5, "C-330");*/      // previous exercises
-
-        Kia rio = new Kia(2010,"Kia Rio", false, 150000, "Comfort");
+        /*Kia rio = new Kia(2010,"Kia Rio", false, 150000, "Comfort");
         rio.startEngine();
 
         Vehicle vehicle = new Vehicle(2000, "vehicle", false, 0);
         vehicle.startEngine();
 
-        Golf golf = new Golf(1999, "Golf", true, 3000, Drive.RWD);
+        Golf golf = new Golf(1999, "Golf", true, 3000, Drive.RWD);*/      // Vehicles
+
+        Cat cat = new Cat();
+        cat.sound();
+        cat.sleep();
+        Dog dog = new Dog();
+        dog.sound();
+        dog.sleep();
 
     }
 }
